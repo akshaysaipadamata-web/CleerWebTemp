@@ -7,6 +7,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400&display=swap');
+
     /* CSS Variables -- Premium Color Palette */
 :root {
         --primary-bg: #fcf6ec;
@@ -36,6 +40,7 @@
         --spacing-2xl: 4rem;
         --spacing-3xl: 6rem;
     }
+
 
     /* Reset & Base */
     * {
@@ -259,16 +264,19 @@
         line-height: 1.1;
     }
 
-    .hero-subtitle {
-        font-size: clamp(1.5rem, 4vw, 2.5rem);
-        color: var(--accent-color);
-        margin-bottom: var(--spacing-lg);
-        animation: fadeInUp 1s ease-out 0.2s both;
-        font-weight: 600;
-        letter-spacing: 0.01em;
-    }
+.hero-subtitle {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp 1s ease-out 0.2s both;
+    font-weight: 400; /* Regular */
+    font-style: italic; /* Italic */
+    letter-spacing: 0.01em;
+}
 
     .hero-description {
+        font-family: 'Lora', serif;
         font-size: clamp(1.1rem, 2.5vw, 1.4rem);
         color: var(--secondary-text);
         max-width: 800px;
@@ -402,6 +410,7 @@
     }
 
     .section-subtitle {
+      font-family: 'Lora', serif;
         font-size: 1.2rem;
         color: var(--secondary-text);
         text-align: center;
@@ -474,6 +483,7 @@
     }
 
     .card h3 {
+      font-family: 'Lora', serif;
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: var(--spacing-sm);
@@ -486,6 +496,7 @@
     }
 
     .card p {
+      font-family: 'Lora', serif;
         color: var(--secondary-text);
         line-height: 1.7;
         font-size: 0.95rem;
