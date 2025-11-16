@@ -9,24 +9,24 @@
 <style>
     /* CSS Variables - Premium Color Palette */
 :root {
-        --primary-bg: #fcf6ec;
-        --secondary-bg: #f0d4b0;
-        --accent-bg: #fef5ea;
+        --primary-bg: #FEFBF6;
+        --secondary-bg: #f5f1e8;
+        --accent-bg: #ffffff;
         --card-bg: #ffffff;
-        --primary-text: #2a2520;
-        --secondary-text: #8B4513;
-        --accent-text: #4a4540;
-        --accent-color: #8B4513;
-        --accent-hover: #6f3610;
-        --accent-light: #a0622b;
-        --accent-muted: #f5dcc3;
-        --gradient-primary: linear-gradient(135deg, #8B4513 0%, #a0622b 100%);
-        --gradient-secondary: linear-gradient(135deg, #F7E1C7 0%, #f0d4b0 100%);
-        --gradient-accent: linear-gradient(135deg, #8B4513 0%, #a0622b 100%);
-        --border-color: #e8cfb0;
-        --border-light: #f0d4b0;
-        --shadow: 0 10px 25px rgba(139, 69, 19, 0.08);
-        --shadow-hover: 0 20px 40px rgba(139, 69, 19, 0.12);
+        --primary-text: #4B4D38;
+        --secondary-text: #6b6e52;
+        --accent-text: #5a5c44;
+        --accent-color: #4B4D38;
+        --accent-hover: #3a3c2a;
+        --accent-light: #6b6e52;
+        --accent-muted: #e8e7de;
+        --gradient-primary: linear-gradient(135deg, #4B4D38 0%, #5a5c44 100%);
+        --gradient-secondary: linear-gradient(135deg, #FEFBF6 0%, #f5f1e8 100%);
+        --gradient-accent: linear-gradient(135deg, #4B4D38 0%, #6b6e52 100%);
+        --border-color: #e8e5da;
+        --border-light: #f5f1e8;
+        --shadow: 0 10px 25px rgba(75, 77, 56, 0.08);
+        --shadow-hover: 0 20px 40px rgba(75, 77, 56, 0.12);
         --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
         --spacing-xs: 0.5rem;
         --spacing-sm: 1rem;
@@ -185,7 +185,21 @@
     }
 
     .section-title {
-        font-size: clamp(2.5rem, 5vw, 4rem);
+
+        font-size: 1.2rem;
+        color: var(--secondary-text);
+        text-align: left;
+        margin-bottom: var(--spacing-2xl);
+        max-width: 1007px;
+        height: 10px;
+        bottom: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-subtitle {
+        font-size: 2.0rem;
         font-weight: 700;
         text-align: center;
         margin-bottom: var(--spacing-xl);
@@ -193,21 +207,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-    }
-
-    .section-subtitle {
-        font-size: 1.2rem;
-        color: var(--secondary-text);
-        text-align: center;
-        margin-bottom: var(--spacing-2xl);
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 8000px;
     }
 
     /* Card Grid */
     .card-grid {
-        display: grid;
+        display: table-column;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         gap: var(--spacing-lg);
         margin-top: var(--spacing-2xl);
@@ -221,6 +226,7 @@
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         overflow: hidden;
+        margin-top: 10px;
         cursor: pointer;
         box-shadow: var(--shadow-card);
     }
@@ -581,23 +587,25 @@
   <div class="page-container">
    
     <section class="section">
-      <h2 class="section-title">Join the Cleer Team</h2>
-      <p class="section-subtitle">We lowk need u gng 😘🌹</p>
+      <h2 class="section-title">Open roles</h2>
+      <p class="section-subtitle">Most people show up when it’s safe. The rare ones show up now.</p>
       
-      <div class="card-grid">
-        <div class="card featured">
-          <div class="card-content">
-            <h3><i class="fas fa-code"></i>Software Engineer</h3>
-            <div class="role-type">Engineering • Full-time • Remote</div>
-            <p>Run the crew and gon be building the next level AI. You gotta know ML, distributed systems, and the latest web tech like yo life depend on it.</p>
-            <div class="requirements">
-              <strong>Requirements:</strong> You've got three plus years on the block (SWE)<br>
-              <strong>Skills:</strong> Python, ML frameworks, cloud architecture<br>
-              <strong>Bonus:</strong> AI/ML experience, team leadership
-            </div>
-            <a href="contact.html" class="btn btn-primary">Apply Now</a>
-          </div>
-        </div>
+<div class="card-grid">
+  <div class="card featured">
+    <div class="card-content">
+      <h3><i class="fas fa-code"></i> Software Engineer</h3>
+      <div class="role-type">Engineering • Full-time • Remote</div>
+      <p>You’re joining before the world knows what Cleer is. No bureaucracy, no dead weight — just raw execution. If you want a safe, cushy job, skip this. If you want to help build the first truly aware personal AI, step in.</p>
+      <div class="requirements">
+        <strong>Requirements:</strong> 3+ years building production software<br>
+        <strong>Skills:</strong> Python, ML frameworks, distributed systems, cloud architecture<br>
+        <strong>Bonus:</strong> Experience in AI/ML, shipping fast with small teams
+      </div>
+      <a href="contact.html" class="btn btn-primary">Apply Now</a>
+    </div>
+  </div>
+</div>
+
         
        <!-- <div class="card">
           <div class="card-content">
@@ -614,36 +622,41 @@
         </div> -->
         
         
-        <div class="card">
-          <div class="card-content">
-            <h3><i class="fas fa-palette"></i>UX Designer</h3>
-            <div class="role-type">Design • Full-time • Remote</div>
-            <p>Build AI interfaces that actually click with people. Got extra spice in UX/UI, with a portfolio full of tricky, dope designs</p>
-            <div class="requirements">
-              <strong>Requirements:</strong> 2+ years UX/UI design (Ignore if intern)<br>
-              <strong>Skills:</strong> Figma, user research, prototyping<br>
-              <strong>Bonus:</strong> AI product design experience
-            </div>
-            <a href="contact.html" class="btn btn-primary">Apply Now</a>
-          </div>
-        </div>
+<div class="card featured">
+  <div class="card-content">
+    <h3><i class="fas fa-code"></i> Software Engineer</h3>
+    <div class="role-type">Engineering • Full-time • Remote</div>
+
+    <p>You’ll be building the core systems that let Cleer understand what users see and act with context. This is fast, low-fluff work — screen parsing, real-time automation, and deep integration across desktop and web. If you want predictable structure, look elsewhere. If you want to architect the foundation of a truly aware personal assistant, step in.</p>
+
+    <div class="requirements">
+      <strong>Requirements:</strong> 3+ years building production software<br>
+      <strong>Skills:</strong> Python or TypeScript, vision/automation frameworks, browser & OS-level integration, backend fundamentals<br>
+      <strong>Bonus:</strong> Experience with real-time systems, agentic workflows, or desktop automation
+    </div>
+
+    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+  </div>
+</div>
+
         
 
 
 
         <div class="card">
-          <div class="card-content">
-            <h3><i class="fas fa-comments"></i> Community Manager</h3>
-            <div class="role-type">Community • Full-time • Remote</div>
-            <p>Grow our squad and keep em hyped. You gotta talk smooth and know your way around AI/tech crowds</p>
-            <div class="requirements">
-              <strong>Requirements:</strong> 2+ years community management (Ignore if intern)<br>
-              <strong>Skills:</strong> Social media, content creation<br>
-              <strong>Bonus:</strong> AI/tech community experience
-            </div>
-            <a href="contact.html" class="btn btn-primary">Apply Now</a>
-          </div>
-        </div>
+  <div class="card-content">
+    <h3><i class="fas fa-comments"></i> Community Manager</h3>
+    <div class="role-type">Community • Full-time • Remote</div>
+    <p>You’ll be the connective tissue between early believers and the product we’re building. This isn’t about posting pretty updates — it’s about shaping a movement around a new category of AI. You’ll manage feedback loops, steer narrative, and turn early users into a force that drives the product forward.</p>
+    <div class="requirements">
+      <strong>Requirements:</strong> 2+ years building or managing engaged communities (intern experience still counts)<br>
+      <strong>Skills:</strong> Content strategy, community growth, professional communication<br>
+      <strong>Bonus:</strong> Experience with AI/tech audiences, launching early-stage products
+    </div>
+    <a href="contact.html" class="btn btn-primary">Apply Now</a>
+  </div>
+</div>
+
         
         
       </div>
